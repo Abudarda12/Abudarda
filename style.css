@@ -1,31 +1,37 @@
 body{
     margin: 0%;
     padding: 0%;
-    font-family: sans-serif;
+    
+}
+html{
+    background-color: rgb(39, 39, 39);
+    color: #fff;
 }
 header {
+    font-family: monospace, sans-serif;
     height: 15vh;
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
+    background-color: rgb(39, 39, 39);
     position: fixed; /* Make the navbar fixed */
     top: 0; /* Position it at the top of the page */
     left: 0;
     width: 100%; /*Ensure it spans the full width */
     z-index: 1000; /* Ensure it stays above other elements */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    color: #fff;
 }
 .menu a{
     text-decoration: none;
     margin: 5px;
     font-weight: 600;
-    color: #7C617B;
+    color: #0daff0;
 }
 .menu a:hover{
-    color: #607B61;
+    color:white;
 }
 .dropdown {
     position: relative;
@@ -35,7 +41,7 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -57,8 +63,7 @@ header {
     cursor: pointer;
     border-radius: 5px;
     padding: 5px 10px;
-    background-color: #fff;
-    
+    background-color: #0daff0;
 }
 @media (max-width: 768px) {
     .menu {
@@ -71,7 +76,7 @@ header {
         top: 15vh;
         left: 0;
         width: 90%;
-        background-color: #fff;
+        background-color: rgb(39, 39, 39);
         z-index: 1;
         flex-direction: column;
         align-items: center;
@@ -86,15 +91,31 @@ header {
         display: block;
     }
     .nav-toggle:hover {
-        color: #607B61;
+        color: #fff;
     }
 }
+/* Hero Section Styles */
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 main{
+    font-family: monospace, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
    
 }
 .hero-content{
@@ -113,8 +134,10 @@ main{
     
 }
 
+
+
 .hero-content .name{
-    color: #607B61;
+    color: #0daff0;
 }
 .hero-content p{
     font-weight: 600;
@@ -128,20 +151,20 @@ main{
     align-items: center;
 }
 .hero-content button{
-    background-color: #607B61;
+    background-color: #0daff0;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
     margin: 20px;
-    
-    
 }
 .hero-content button:hover{
     background-color: #fff;
-    color: #607B61;
-    border: 2px solid #607B61;
+    color: black;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 /* Counter Card Styles */
 .counter-card {
@@ -154,12 +177,13 @@ main{
 
 .counter {
     text-align: center;
-    background-color: #fff;
+    background-color: rgb(19, 19, 19);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
     margin: 20px;
+    color: #fff;
     
     }
 
@@ -170,10 +194,15 @@ main{
     font-weight: bold;
     transition: all 0.3s ease;
 }
-.counter h1:hover {
-    color: #607B61;
+.counter:hover {
+    color: #0daff0;
+    transition: all 0.3s ease;
     transform: scale(1.1);
 }
+/* .counter h1:hover {
+    color: #0daff0;
+    transform: scale(1.1);
+} */
 @media screen and (max-width: 768px) {
     main{
         margin-top: 40vh;
