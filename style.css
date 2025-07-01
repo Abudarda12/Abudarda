@@ -4,8 +4,9 @@ body{
     
 }
 html{
-    background-color: rgb(39, 39, 39);
-    color: #fff;
+    background-color: white;
+    color: black;
+    
 }
 header {
     font-family: monospace, sans-serif;
@@ -15,14 +16,14 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(39, 39, 39);
+    background-color: #fff;
     position: fixed; /* Make the navbar fixed */
     top: 0; /* Position it at the top of the page */
     left: 0;
     width: 100%; /*Ensure it spans the full width */
     z-index: 1000; /* Ensure it stays above other elements */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-    color: #fff;
+   
 }
 .menu a{
     text-decoration: none;
@@ -31,7 +32,7 @@ header {
     color: #0daff0;
 }
 .menu a:hover{
-    color:white;
+    
 }
 .dropdown {
     position: relative;
@@ -59,11 +60,11 @@ header {
 
 .nav-toggle{
     display: none;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background-color: #0daff0;
+    border: none;
+    background-color: #fff;
+    
 }
 @media (max-width: 768px) {
     .menu {
@@ -76,7 +77,7 @@ header {
         top: 15vh;
         left: 0;
         width: 90%;
-        background-color: rgb(39, 39, 39);
+        background-color: #fff;
         z-index: 1;
         flex-direction: column;
         align-items: center;
@@ -89,9 +90,7 @@ header {
     }
     .nav-toggle {
         display: block;
-    }
-    .nav-toggle:hover {
-        color: #fff;
+        color: #000;
     }
 }
 /* Hero Section Styles */
@@ -114,8 +113,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
-    background-color: rgb(39, 39, 39);
-    color: #fff;
+   
    
 }
 .hero-content{
@@ -144,6 +142,7 @@ main{
    font-size: 1.2rem;
    text-align: center;
    padding: 10px 20px;
+   color: #000;
 }
 .hero-content .button{
     display: flex;
@@ -158,12 +157,13 @@ main{
     text-decoration: none;
     font-weight: 600;
     margin: 20px;
+    transition: all 0.3s ease;
 }
 .hero-content button:hover{
     background-color: #fff;
     color: black;
-    border: 2px solid #fff;
-    transition: all 0.3s ease;
+    border: 2px solid #000;
+    
     transform: scale(1.1);
 }
 /* Counter Card Styles */
@@ -184,19 +184,21 @@ main{
     width: 30%;
     margin: 20px;
     color: #fff;
+    transition: all 0.3s ease;
     
     }
 
-.counter h1 {
+/* .counter h1 {
     font-size: 3rem;
     
     margin: 0;
     font-weight: bold;
     transition: all 0.3s ease;
-}
+} */
 .counter:hover {
-    color: #0daff0;
-    transition: all 0.3s ease;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid black;
     transform: scale(1.1);
 }
 /* .counter h1:hover {
